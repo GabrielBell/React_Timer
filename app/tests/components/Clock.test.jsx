@@ -12,6 +12,12 @@ describe('Clock', () => {
 	it('should exist', ()=> {
 		expect(Clock).toExist();
 	});
+	describe('render', () => {
+		it('should render clock to output', () => {
+			var clock = TestUtils.renderIntoDocument(<Clock totalSeconds={62}/>);
+
+		});
+	});
 	describe('formatSeconds',() => {
 		it('should format seconds', () => {
 			var clock = TestUtils.renderIntoDocument(<Clock/>);
